@@ -18,12 +18,12 @@ export class App extends Component{
 
   ifContactExist = (name) =>
   {
-    return this.state.contacts.some(contact => contact.name.toLowerCase() === name.toLowerCase())
+    return this.state.contacts. some(contact => contact.name.toLowerCase() === name.toLowerCase())
 
   }
 
   addContact = (data) => {
-
+    console.log('data :>> ', data)
    if (this.ifContactExist(data.name)) {
      alert(`${data.name} is already in contacts`)
      return
